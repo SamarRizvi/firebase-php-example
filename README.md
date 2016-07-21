@@ -1,2 +1,2 @@
 # firebase-php-example
-Firebase PHP exampe
+Sample to connect to firebase using Slim Framework 2.x
