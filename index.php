@@ -13,7 +13,7 @@ use Kreait\Firebase\Query;
 function configureFireBase()
 {
     $config = new Configuration();
-    $config->setAuthConfigFile(__DIR__ . '/upwork-test-7055663f53c4.json');
+    $config->setAuthConfigFile(__DIR__ . '/firebase-7055663f53c4.json');
     $firebase = new Firebase('https://upwork-test.firebaseio.com/', $config);
     return $firebase;
 }
