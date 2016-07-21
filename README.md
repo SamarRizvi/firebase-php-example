@@ -10,13 +10,13 @@ Note that firebase-sample-db.json is nothing but a sample database that is being
 #What does this sample do
 Perform the following requests:
 
-• /getuser/userid/<userId>
+• /getuser/userid/:userid
 Get user by id
 
-• /getorder/orderid/<orderId>
+• /getorder/orderid/:orderid
 Get order details with user details for the order givein by order id
 
-• /cancelorder/orderId/<orderId>
+• /cancelorder/orderId/:orderid
 Mark order status 2 (cancel order) for a given order by id
 
 Basic error handling has also been done.
