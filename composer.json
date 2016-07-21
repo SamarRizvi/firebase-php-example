@@ -1,0 +1,8 @@
+{
+  "require": {
+    "slim/slim": "2.*",
+    "firebase/php-jwt": "3.0",
+    "kreait/firebase-php": "^1.1",
+    "ktamas77/firebase-php": "dev-master"
+  }
+}
