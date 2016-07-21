@@ -119,6 +119,7 @@ function cancelOrderById($orderId)
 
 $app = new \Slim\Slim();
 
+/** GET Request to get user by id */
 $app->get('/getuser/userid/:userId', function ($userId) {
     $nodeGetContent = getUserById($userId);
     if ($nodeGetContent) {
@@ -131,6 +132,7 @@ $app->get('/getuser/userid/:userId', function ($userId) {
     echoResponse(200, $response);
 });
 
+/** GET Request to get order by id */
 $app->get('/getorder/orderid/:orderId', function ($orderId) {
     $nodeGetContent = getOrderById($orderId);
     if ($nodeGetContent) {
@@ -146,6 +148,7 @@ $app->get('/getorder/orderid/:orderId', function ($orderId) {
     echoResponse(200, $response);
 });
 
+/** PATCH Request to update order status by order id */
 $app->patch('/cancelorder/orderid/:orderId', function ($orderId) {
     $cancelStatus = cancelOrderById($orderId);
     if($cancelStatus) {
@@ -159,6 +162,7 @@ $app->patch('/cancelorder/orderid/:orderId', function ($orderId) {
     echoResponse(200, $response);
 });
 
+/** Sample POST request just to fill in some user data */
 $app->post('/users', function () {
     $config = new Configuration();
     $config->setAuthConfigFile(__DIR__ . '/upwork-test-7055663f53c4.json');
@@ -174,6 +178,7 @@ $app->post('/users', function () {
     echoResponse(201, $response);
 });
 
+/** Sample POST request just to fill in some order data */
 $app->post('/orders', function () {
     $config = new Configuration();
     $config->setAuthConfigFile(__DIR__ . '/upwork-test-7055663f53c4.json');
