@@ -1,0 +1,34 @@
+{
+  "orders" : {
+    "-KNCKASyWN1-zcboQ2eA" : {
+      "order_date" : "2016-07-19",
+      "order_id" : 1,
+      "order_status" : 1,
+      "order_total" : "300",
+      "user_id" : 1
+    },
+    "-KNCKz4SJg-byqHwv4pe" : {
+      "order_date" : "2016-07-19",
+      "order_id" : 2,
+      "order_status" : 1,
+      "order_total" : "500",
+      "user_id" : 2
+    }
+  },
+  "users" : {
+    "-KNByN33VOxlxl7Kk1OL" : {
+      "email" : "sr@mat.com",
+      "first_name" : "Samar",
+      "last_name" : "Rizvi",
+      "phone_no" : "+918896123344",
+      "user_id" : 2
+    },
+    "-KNByd4i4Iuth-PY4CVV" : {
+      "email" : "ss@mat.com",
+      "first_name" : "Shailesh",
+      "last_name" : "Singh",
+      "phone_no" : "+918896123344",
+      "user_id" : 1
+    }
+  }
+}
